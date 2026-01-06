@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game Design and Development</title>
+
+		<style>
+			.source-link, nav ul li a{
+				text-decoration: none;
+				color: rgb(63, 115, 214);
+			}
+			
+			.source-link:hover{
+				color: rgb(165, 106, 210);
+			}
+
+			nav ul li a{
+				text-decoration: none;
+				color: rgb(63, 115, 214);
+				background-color: #d0d0d0;
+				padding: 5px 3px;
+			}
+
+			nav ul li a:hover{
+				color: rgb(165, 106, 210);
+				background-color: #cdcbcb;
+			}
+	
+			div ol li:target {
+				background-color: #ffa;
+			}
+
+			div{
+				width: 99%;
+				margin: 5px 0px;
+				padding: 5px 8px;
+				border: 1px gray solid;
+				border-radius: 15px;
+				scroll-margin-top: 7.5rem;
+			}
+
+			table{
+				border: 1px black solid;
+				border-radius: 5px;
+			}
+
+			td{
+				text-align: justify;
+				padding: 10px;
+				border: 1px black solid;
+				border-radius: 10px;
+			}
+
+			th{
+				padding: 10px;
+				border: 1px black solid;
+				border-radius: 10px;
+			}
+
+			h1{
+				text-align:center;
+			}
+
+			h2, p, li{
+				text-align: justify;
+			}
+
+			.flexbox{
+				display: flex;
+				border:0px;
+				margin:auto;
+			}
+
+			.flexcol{
+				border: 0px;
+				margin: 0px 5px;
+				text-align: center;
+			}
+
+			.flexcol img{
+				height: 100%;
+				width: 100%;
+			}
+
+			img{
+				border-radius: 10px;
+			}
+
+			nav ul li{
+				display: inline-block;
+				margin: 8px 5px
+			}
+
+			nav{
+				width: 99%;
+				margin: 5px 0px;
+				padding: 5px 8px;
+				border: 1px gray solid;
+				border-radius: 15px;
+				position: sticky;
+				top:5px;
+				background-color: white;
+			}
+
+			ol li a{
+				word-wrap:break-word;
+			}
+
+			nav ul{
+				padding: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav>
+			<ul>
+				<li><a href="#intro">Introduction</a></li>
+				<li><a href="#platform">The Platform</a></li>
+				<li><a href="#game-mechanics">Game Mechanics</a></li>
+				<li><a href="#Storytelling">Storytelling</a></li>
+				<li><a href="#Visual-Design">Visual Design</a></li>
+				<li><a href="#Game-Pacing">Game Pacing</a></li>
+				<li><a href="#Player-Engagement">Player Engagement</a></li>
+				<li><a href="#Graphics-and-Audio">Graphics & Audio</a></li>
+				<li><a href="#Development-Process">Development Process</a></li>
+				<li><a href="#Market-Research">Market Research</a></li>
+				<li><a href="#Pros-Cons">Pros & Cons</a></li>
+				<li><a href="#prediction">Prediction</a></li>
+				<li><a href="#References">References</a></li>
+				<li><a href="#addition">Addition</a></li>
+			</ul>
+		</nav>
+
+		<div id="intro">
+			<h1>Game Design and Development</h1>
+			<p>Game design and development is the process of creating and shaping the mechanics, systems and rules of a game. Games can be made for entertainment, 
+				education, exercise or experimental purposes using programming languages such as Python, Java, Javascript, C# and C++. However, the programming 
+				language that is mostly used by the industry is C++.
+				<br /><br />
+				
+				For Example:
+				<ul>
+					<li>World of Warcraft</li>
+					<li>Counter-Strike</li>
+					<li>Metro 2033</li>
+					<li>Assassin's Creed Unity</li>
+				</ul>
+
+				<div class="flexbox">
+					<div class="flexcol">
+						<img src="https://upload.wikimedia.org/wikipedia/en/6/65/World_of_Warcraft.png" height="600">
+					</div>
+					<div class="flexcol">
+						<img src="https://upload.wikimedia.org/wikipedia/en/6/6e/CSGOcoverMarch2020.jpg" height="600">
+					</div>
+					<div class="flexcol">
+						<img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Assassin%27s_Creed.jpg/220px-Assassin%27s_Creed.jpg" height="600">
+					</div>
+				</div>
+				
+				C++ is mainly used because of its flexibility and high abstraction level which allows you to have precise control over how a computer's hardware is 
+				interacting with the code that you write. C++ also provides more granular controls over how graphics are processed by the system, which plays a vital 
+				role in game design since it ensures the quality of the graphics as well as the performance and smoothness of the game. Another key benefit of using 
+				C++ is its unique ability to optimise special parts of your game design, giving them their abstractions. Essentially, it is akin to giving specific 
+				elements of the game their infrastructure and resources which would be difficult to implement if not impossible with many other languages.<a class='source-link' href="#source1"><sup>[1]</sup></a>
+				Besides that, one of the most used game engines in the world to make games, are built with C++ in mind. Most gaming consoles are also built from the ground up using C++.				<h4>However, besides the choice of programming language, there are also many aspects that are involved in making a good game.</h4>
+				</p>
+		</div>
+
+		<div style="border: 0px">
+			<h1>9 Key Aspects of Game Design and Development<a class='source-link' href="#source2"><sup>[2]</sup></a></h1>
+		</div>
+
+		<div id="platform">
+			<h2>1. The Platform</h2>
+			<p>
+				Before a game designer design a game, he need to consider what type of game he wants to design and what <strong>platform</strong> the game based on. 
+				It is important because it is the first step in designing a game.
+			</p>
+			<h3>So what is the platform?</h3>
+			<p>
+				<strong>The platform</strong> is the physical hardware on which the game will be played. When designing a game, game designer must decide on what platform the game will be played on. 
+				Nowadays, it is many platform that we can know such as Personal Computer (PC), Console and Mobile.<a class='source-link' href="#source3"><sup>[3]</sup></a> Each platform has its advantages and disadvantages, as well as a few options for game controls.
+				<ul>
+					<strong><li>Personal Computer (PC)</li></strong>
+					<p>
+						<strong>Personal computer</strong>, often referred to as a PC, is a compact computer that uses a microprocessor and is designed for individual use.<a class='source-link' href="#source4"><sup>[4]</sup></a>
+						PC nowadays can also be used for gaming. Many games can be played on PC, such as DOTA2, Overwatch 2, Counter-Strike: Global Offensive (CSGO), and Warcraft 2.
+						These games can be played by using keyboard and mouse. Besides that, video game controllers can be used as a physical hardware to play games.
+						However, not all the games can be played in all PC. This is because some of the games have hardware requirements as well as operating system limitation. There have some game require expensive hardware. 
+						The requirement for hardware is due to technical limitations to run a game, like a certain generation of CPU or GPU. Besides the hardware requirements, there are also have some game that cannot be played on all operating system such as Linux, Windows and macOS. 
+						This is because some games have limitation on the operating system to run it. In this case, users usually solved this problem by using virtual machines.
+					</p>
+					<strong><li>Console</li></strong>
+					<p>
+						<strong>Console</strong>, a piece of electronic equipment for playing computer games.<a class="source-link" href="#source5"><sup>[5]</sup></a>
+						There are a few types of console. The home console is generally placed in a permanent location. It connected and controlled a display device such as a television. 
+						The example of the home console is PS5 and XBOX. Besides that, a handheld console is a controller which includes a display unit and speaker. 
+						The handheld console can be played anywhere and anytime. For instance, the Nintendo Switch is a handheld console.
+						<strong>Console</strong> is specifically designed for gaming. In this case, higher-quality hardware for a lower price and comfortable support for multiplayer gaming are the advantages provided by console. 
+						Unfortunately, not all consoles are available in every region.<a class='source-link' href="#source3"><sup>[3]</sup></a>
+					</p>
+					<strong><li>Mobile</li></strong>
+					<p>
+						<strong>Mobile</strong> is most common thing in our daily life. This is because almost everyone have a smartphone. Smartphone nowadays can perfectly run high-quality games because the CPU and GPU built-in are advanced. 
+						The CPU and GPU are being minimised. There also have a smartphone that is specifically designed for gaming. For example, ASUS ROG PHONE 8 Pro<a class='source-link' href="#source6"><sup>[6]</sup></a> is a smartphone that can give the user a smooth experience while playing games. 
+						The games that platform at mobile are PUBG Mobile, Mobile Legends: Bang Bang and Clash of Clans.
+					</p>
+				</ul>
+				<h3>Conclusion</h3>
+				<p>
+					Platform is the physical hardware on which the player will play the game. It is important because the games rely on the platform. Those platforms have their advantages compared with other.<a class='source-link' href="#source3"><sup>[3]</sup></a>
+					<br>
+					<table style="width: 100%;" border="1px">
+						<tr>
+							<th></th>
+							<th>Personal Computer</th>
+							<th>Console</th>
+							<th>Mobile</th>
+						</tr>
+						<tr>
+							<th>Pros</th>
+							<td>
+								<ul>
+									<li>Common & readily available</li>
+									<li>Can be relatively cheap</li>
+									<li>Hardware can be replaced and upgraded</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li>Specifically designed for gaming</li>
+									<li>Higher-quality hardware for a lower pricee</li>
+									<li>Comfortably support multiplayer gaming</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li>Small and versatile</li>
+									<li>Games can be played anywhere, on-the-go</li>
+									<li>Very common and readily available</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th>Cons</th>
+							<td>
+								<ul>
+									<li>High-quality hardware is expensive</li>
+									<li>High-level games require expensive hardware</li>
+									<li>Cannot be used on-the-go</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li>Screen or monitor comes separately</li>
+									<li>Not all consoles are available in every region</li>
+									<li>Connot be used on-the-go</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li>Not all hardware is optimized for gaming</li>
+									<li>Cannot support advanced games</li>
+									<li>Multiplayer games are less common</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</p>
+			</p>
+		</div>
+
+		<div id="game-mechanics">
+			<h2>2. Game Mechanics</h2>
+			<p>
+				<strong>Game mechanics</strong> is the spirit of a game. It is how the player controls the game and consists of rules regarding the movement of player characters, environment allowances, and the general rules of a game. 
+				Game mechanics also include how a game reacts to player controls which also follow a set of rules.<a class='source-link' href="#source3"><sup>[3]</sup></a> 
+				The rules always refer to the type of game.
+				<br>
+				<h3>Types of Game<a class='source-link' href="#source3"><sup>[3]</sup></a></h3>
+				<ul>
+					<li>
+						<strong>Platformer:</strong> A player controls a character that has to run and jump on platforms while avoiding obstacles
+						<ol>
+							<li>Geometry Dash</li>
+							<li>Getting Over It with Bennett Foddy</li>
+							<li>Kirby's Return to Dream Land</li>
+						</ol>
+					</li>
+					<li>
+						<strong>Multiplayer online battle arena (MOBA):</strong> Multiple players face off in arena-style environment
+						<ol>
+							<li>League of Legends</li>
+							<li>DOTA2</li>
+							<li>Star Wars: Force Arena</li>
+						</ol>
+					</li>
+					<li>
+						<strong>Sports:</strong> A representation of a current or made-up sports
+						<ol>
+							<li>EA Sports FC (previously FIFA) series</li>
+							<li>Rocket League</li>
+							<li>eFootball PES 21</li>
+						</ol>
+					</li>
+					<li>
+						<strong>Role-playing game (RPG):</strong> Players assume different kinds of fictional characters and play through a story
+						<ol>
+							<li>FINAL FANTASY</li>
+							<li>Diablo IV</li>
+							<li>Black Myth Wukong</li>
+						</ol>
+					</li>
+					<li>
+						<strong>Puzzles:</strong> Solving problems and puzzles through specific challenges
+						<ol>
+							<li>Sudoku</li>
+							<li>Crossword</li>
+							<li>Jigsaw puzzles</li>
+						</ol>
+					</li>
+					<li>
+						<strong>Strategy:</strong> Slower, sometimes turn-based game that requires different strategies to win
+						<ol>
+							<li>StarCraft II: Wings of Liberty</li>
+							<li>Warcraft 2</li>
+							<li>XCOM 2</li>
+						</ol>
+					</li>
+					<li>
+						<strong>Action/Adventure:</strong> High-paced game with the character going through a series of quests or mission
+						<ol>
+							<li>Counter-Strike: Global Offensive</li>
+							<li> Grand Theft Auto Series</li>
+							<li>Black Myth Wukong</li>
+						</ol>
+					</li>
+				</ul>
+				<h3>Mechanics<a class='source-link' href="#source3"><sup>[3]</sup></a></h3>
+				<p>Besides game type, the other rules also important, such as:</p>
+				<ul>
+					<li><strong>The Space of the Game:</strong> The setting of the game</li>
+					<li><strong>The State of the Game:</strong> This could include player score or health, current level, or other important game variables</li>
+					<li><strong>Actions:</strong> These are the options available to our player that can affect the game state, such as character movement</li>
+					<li><strong>Necessary Skills:</strong> The skill set the player must have to complete the game successfully</li>
+					<li><strong>Elements of Chance:</strong> Eandomness added to the game, such as random enemy actions or something like a dice roll</li>
+				</ul>
+				<h3>Conclusion</h3>
+				<p>
+					We must keep the reward and penalty parameters consistent with the desired player experience for the game. 
+					Players will feel good when they do something well and inspires them to do better when they perform poorly.
+				</p>
+			</p>
+		</div>
+
+		<!--Hi guys! :D-->
+		<div id="Storytelling">
+			<h2>3. Storytelling<a class='source-link' href="#source7"><sup>[7]</sup></a></h2>
+			<p><strong>Storytelling</strong> has been one of the main factor of why a player would continue playing a game. Games with well-written story can make 
+			one's game truly shine and keep the players wanting more. Besides, a good story can improve the players experience throughout the whole game. Hence, it 
+			helps the players build an emotional connection with the world and characters.
+			<br><br>
+
+			Storytelling truly is a complex process. It involves various elements such as gameplay, narrative, and visual design. The use of storytelling in video 
+			games differs from other traditional forms of storytelling, like movies, books, or theatre. The player is an active participant in the story. He has 
+			power over the choices and actions of the protagonist.
+			<br><br>
+			
+			The use of storytelling in video games differs from other traditional forms of storytelling, like movies, books, or theatre. The player is an active 
+			participant in the story. He has power over the choices and actions of the protagonist.</p>
+
+			<h3>Benefits of Storytelling</h3>
+			<p>One of the key benefits of storytelling is that it can provide players with a more <strong>immersive experience.</strong> It allows players to inhabit the roles of the characters; become fully
+			invested in the game's narrative. The players get a sense of emotional attachment and investment in the outcome. It leads to a more satisfying experience.
+			<br /><br />
+
+			Another benefit is that it can <strong>help reinforce important messages or themes.</strong> Whether it's exploring complex moral dilemmas or shining a light on social issues. Games can use their
+			narratives to encourage players to think critically about the world around them. It can be particularly impactful for younger players. They may be more receptive to these messages
+			when presented in a fun and engaging format.
+			<br /><br />
+			
+			Storytelling also encourages <strong>critical thinking and problem-solving skills.</strong> Many games require players to navigate through complex storylines,
+			make difficult decisions, and solve puzzles to progress. It helps players develop such skills as :
+			<ul>
+				<li>Logical reasoning</li>
+				<li>Creative thinking</li>
+				<li>Adaptability to ever-changing scenarios that can be applied in the real world</li>
+			</ul>
+			</p>
+			<h3>Types of Narrative for Storytelling</h3>
+			<p>As we have established, a well-crafted story can elevate a game from being just an entertaining experience. Therefore, we must know which practices of storytelling
+			fits our game the most. There are different types of storytelling such as;
+			<ol>
+				<li><strong>Linear storytelling:</strong>
+				<br />It is the most traditional form. In linear storytelling, the game follows a set path that the player follows in a specific order. As a result,
+				the player's actions have little to no effect on the story. This type of storytelling is common in strong narratives.</li><br>
+				<li><strong>Non-Linear Storytelling:</strong>
+				<br />This type of storytelling is a less structured approach. You don't get the game's story in a specific order, and the player's actions
+				can significantly impact the story's outcome. This type of storytelling is common in open-world games.</li><br>
+				<li><strong>Emergent Storytelling:</strong>
+				<br />This type of storytelling is one of a kind and is the most creative approach. It is a type of storytelling that emerges from the gameplay
+				itself. The player's actions and decisions create unique and unpredictable stories that are not part of the game's narrative. For example, Minecraft and The Sims
+				use this type of storytelling.</li>
+			</ol>
+			</p>
+
+			<div class="flexbox">
+				<div class="flexcol">
+					<figure>
+						<img src="https://ecampusontario.pressbooks.pub/app/uploads/sites/769/2021/04/image39.png" height="100">
+						<figcaption>Linear Storytelling</figcaption>
+					</figure>
+				</div>
+				<div class="flexcol">
+					<figure>
+						<img src="https://ecampusontario.pressbooks.pub/app/uploads/sites/769/2021/04/image34.png" height="100">
+						<figcaption>Non-Linear Storytelling</figcaption>
+					</figure>
+				</div>
+			</div>
+
+			<h3>Conclusion</h3>
+			<p>In summary, storytelling is a complex and multi-layered process that involves various elements. It includes gameplay, narrative, visual design, character development
+			and worldbuilding. It's a unique form of storytelling that allows players to be active participants in the story. There appears to be the potential to create
+			a deep emotional bond between the player and the game world.
+			</p>
+
+		</div>
+
+		<div id="Visual-Design">
+			<h2>4. Visual Design</h2>
+			<p><strong>Visual design</strong><a class='source-link' href="#source8"><sup>[8]</sup></a> is quite an interesting topic as it completely makes a game a game. 
+			With that amount of significance, many modern games have taken 
+			things up a notch. The amount of attention to detail is quite impressive and some modern games even make us wonder if it really is a game or real life. 
+			The first impression of a player will always be the visual design of a game, aside from what
+			type of the game is of course.  Whether we like it or not, players are more appreciative of a highly detailed world with a unique atmosphere that makes them 
+			believe they are watching a movie.<br /><br />
+			As mention before, once players download a game, the visual design is the main thing they pay attention to, just think of screenshots and game posters. The game's 
+			graphics and art style can immediately grab a player's attention and set the tone for the rest of the experience. A well-designed game world and characters 
+			also help create a sense of familiarity and attachment to the game's world, making it easier for players to immerse themselves in the story</p>
+			
+			<h3>Different Types of Visual Design<a class='source-link' href="#source9"><sup>[9]</sup></a></h3>
+			<p>Visual Design consists of two main things to consider during game development, which are Graphic Design and Game Design.</p>
+			<h4><strong>Game Design</strong></h4>
+			Game Design is the combination of creativity and design to develop a game for entertainment, it involves creating compelling stories, characters,
+			goals, rules, and challenges.
+			<br />
+			Game designers are involved in every step of the design process, from conceptualising the storyline and characters to determining the game mechanics and balancing
+			the gameplay. Game design is central to all different types of games, to entertain, educate, and challenge players through interactive experiences.
+
+			<h4><strong>Graphic Design</strong></h4>
+			Graphic design is the art of creating visuals to convey a message. It combines typography, imagery, colour, and layout to produce designs. Graphics are usually the
+			first thing people notice when interacting with a game, which is why they are so important as they need to make an impact and accurately convey the message. 
+			<br />
+			Graphic design is an essential part of making a game as it blends creativity with technical skills to produce visually appealing and effective communication.
+			<br />
+			<p>Some may even consider these two terms as complete different thing for the visual design department. However, they both share the same goal to make something
+			appealing to the audiences by creating impressive and alluring visuals. Game Designers use environments, characters, and level design to tell the game's progression,
+			whereas Graphic Designers use UI elements, icons, and visual indicators to guide players throughout the whole experience.
+			</p>
+
+			<h3>Importance of Visual Design</h3>
+			<p>As we have understand so far, visual design is an important aspect to account for in game development. It is not only good for first impression, it's also good for:</p>
+			<ul>
+
+				<li><strong>Branding and Recognition</strong>
+				<br />Unique and cohesive visual design contributes to a game's identity and branding. A well-designed game with a strong aesthetic and originality
+				stands out in a crowded market and becomes more recognisable, potentially attracting a larger audience.</li>
+				<li><strong>User Interface (UI) and User Experience.</strong>
+				<br />The visual design of the UI plays a huge role in how intuitive and enjoyable a game is to play. Clear, well-designed interfaces improve the player's 
+				ability to navigate the game's menus, controls, and system without frustrations.</li>
+				<li><strong>Competitive Advantage</strong>
+				<br />In today's competitive gaming market, stunning visuals can give a game an edge. Players often gravitate towards games that look polished and have 
+				a unique art style, which can lead to better reviews, increased sales and a more loyal fanbase.</li>
+			</ul>
+
+			<p style="text-align: center;"><strong>Type of Art Style</strong></p><br>
+			<div class="flexbox" style="text-align: center;">
+				<div class="flexcol">
+						<img src="https://dreamfarmstudios.com/wp-content/uploads/2023/06/2d-art-min-scaled.jpg" height="600">
+				</div>
+				<div class="flexcol">
+						<img src="https://dreamfarmstudios.com/wp-content/uploads/2023/06/3d-art-min.jpg" height="600">
+				</div>
+			</div>
+
+			<h3>Conclusion</h3>
+			<p>In essence, visual design is not just about making a game look good - it's integral to the overall experience, influencing gameplay, the player's 
+				perspective and the game's market appeal.</p>
+		</div>
+
+		<div id="Game-Pacing">
+			<h2>5. Game Pacing</h2>
+			<p><strong>Game Pacing</strong> is defined as an intentional control and variation of the tempo and intensity of gameplay to maintain player interest and satisfaction. 
+			It involves carefully balancing moments of challenge and relaxation, fast-paced action and slower exploration, and high and low stakes. By controlling the game's pace, 
+			developers can create a more immersive and enjoyable experience for gamers. Understanding game pacing is crucial in the gaming industry as it directly impacts player engagement and satisfaction. 
+			A well-paced game can keep players hooked for hours, leading to increased playtime and potentially higher revenue for game developers and publishers. 
+			Moreover, game pacing also influences the overall perception and reputation of a game, which can significantly impact sales and the success of a gaming business.</p>
+
+			<h3>Significance of Game Pacing in Games<a class='source-link' href="#source1"><sup>[1]</sup></a></h3>
+			<p>Game pacing holds immense significance in the gaming industry due to several reasons. Firstly, it directly affects the player's level of immersion and enjoyment. 
+			A game that is too slow or monotonous can bore players, resulting in disengagement and abandonment. Conversely, a game that is too fast-paced or challenging can overwhelm players, leading to frustration and a negative gaming experience. 
+			Therefore, striking the right balance in game pacing is crucial for keeping players engaged and satisfied. Secondly, game pacing influences the overall narrative structure and storytelling in games. 
+			By manipulating the pace, developers can effectively build tension, create climactic moments, and deliver impactful plot twists. This enhances the emotional connection between players and the game, making the experience more memorable and captivating.
+			Furthermore, game pacing also plays a role in player retention and replayability. A well-paced game can provide a sense of progression and accomplishment, motivating players to continue playing and exploring the game's world. 
+			Additionally, different pacing techniques can be employed to create different gameplay experiences, encouraging players to revisit the game and try alternative playstyles.</p>
+
+			<h3>Who benefits from Game Pacing in Gaming?<a class='source-link' href="#source10"><sup>[10]</sup></a></h3>
+			<p>Various stakeholders in the gaming ecosystem benefit from understanding and implementing effective game pacing techniques.</p>
+			<ol>
+				<li><strong>Gamers:</strong> Players are the primary beneficiaries of well-paced games. They can enjoy a more immersive and engaging experience that keeps them entertained and invested in the game.</li><br />
+				<li><strong>Game Developers:</strong> Understanding game pacing allows developers to create more compelling and marketable games. 
+					By crafting a well-paced experience, developers can attract a larger player base, increase player retention, and generate higher revenue.</li><br />
+				<li><strong>Publishers:</strong> Game publishers benefit from game pacing as it directly impacts the marketability and commercial success of a game. 
+					A well-paced game is more likely to receive positive reviews, generate word-of-mouth recommendations, and achieve higher sales.</li><br />
+				<li><strong>Streamers and Content Creators:</strong> Streamers and content creators rely on engaging and entertaining gameplay to attract viewers and build a following. 
+					Well-paced games provide them with exciting content to showcase and entertain their audience.</li>
+			</ol>
+
+			<h3>Best Practices when Considering Game Pacing in Gaming and Why it Matters<a class='source-link' href="#source10"><sup>[10]</sup></a></h3>
+			<p>Implementing effective game pacing requires careful consideration and adherence to best practices. For example:</p>
+
+			<ol>
+				<li><strong>Understanding the Target Audience: </strong>Different player demographics have varying preferences when it comes to game pacing. By understanding the target audience's preferences and playstyles, businesses 
+				can tailor the game's pacing to cater to their needs and maximize player satisfaction.</li><br />
+
+				<li><strong>Player's Skill Level: </strong>One aspect of game pacing that is often overlooked is the player’s level of experience. Novice players will require a different pacing than experienced players. For example, 
+				in a strategy game  <em>(For example: League of Legends, Dota 2, StarCraft II)</em>, a novice player might need more time to plan each move, while an experienced player can make decisions more quickly. 
+				The game’s pacing should be adjusted accordingly to accommodate different players individual skill levels.</li><br />
+
+				<li><strong>Game's Pace: </strong>Another important thing to account for when creating or developing a game's pace, is the genre that the game is based on. Action games or first-person shooters are typically fast-paced, 
+				while puzzle games are usually slower and requires more thought in each step. The pacing should match accordingly to the gameplay so that the players won't be left frustrated or bored of the game's speed.</li><br />
+
+				<li><strong>Provide Variety: </strong>Monotonous pacing can lead to player fatigue and disengagement. A variety of gameplay experiences should be included, such as action-packed sequences, exploration, 
+				puzzle-solving, and narrative-driven moments. Game Developers should alternate between these techniques so that the game's community and players don't get put off by the gameplay and stop playing.</li><br />
+
+				<li><strong>Player Feedback: </strong>Game pacing is subjective and can vary based on individual player preferences and their background. Businesses need to iterate and test the pacing during the game development process, 
+				gathering feedback from playtesters and making adjustments to enhance the overall experience. If playtesters are consistently complaining that the game is too slow or too fast, then the developers should put out patches 
+				for the game to adjust the pacing accordingly. Game Developers should also keep an eye out for player feedback after release so that patches can be sent out to settle problems within the game.</li><br />
+			</ol>
+
+			<div style="text-align:center; border:0px">
+				<p style="text-align: center;"><strong>Example of Intensity Related to Gameplay Time</strong></p>
+				<img src="https://twobuttoncrew.com/wp-content/uploads/2017/06/Idealized-Interest-Curve.png" height="400">
+			</div>
+
+			<h3>Conclusion</h3>
+			<p>Game pacing is an important consideration for game developers to create an enjoyable experience for their players, create more compelling and marketable games, increase commercial success and attracts players and build a community.
+			Different aspects such as understanding the target audience, considering player's skill levels, designing a game's pace that suits the gameplay, providing variety in the gameplay, deliberation over player feedback should
+			all be taken into account when adjusting the pacing of a game.</p>
+		</div>
+
+		<div id="Player-Engagement">
+			<h2>6. Player Engagement<a class='source-link' href="#source11"><sup>[11]</sup></a></h2>
+			<p>Player engagement and player experience are closely interconnected in the realm of video games. Player engagement refers to the extent to which players are captivated, involved, and invested in a game.
+				Player engagement is influenced by many different factors, including gameplay mechanics, progression systems, graphics, storytelling, content updates, and in-game events. However, an element that is often overlooked is the effect of inadequate player support and community management.  
+				When facing issues while playing a game, players expect them to be resolved quickly, either by getting help from fellow players in the community or by contacting player support.  
+				Gaming involves an emotional attachment which is hard to compare with any other product or service. Being unable to get an issue resolved not only leads to frustration and dissatisfaction, but it can severely diminish player engagement.</p>
+
+			<h3>Best Practices for Player Engagement</h3>
+			<ul>
+				<li><strong>Gameplay Mechanics: </strong>A Game Designer should ensure that players are engaged by incorporating a variety of gameplay mechanics, such as exploration, combat, and puzzles.</li><br />
+				<li><strong>Story Immersion: </strong>Players should be given a reason to care about the game world and its characters. Otherwise, they will quickly lose interest. There are many ways of delivering immersion to the player: <em>visual, auditory, narrative, constructive, and more.</em></li><br />
+				<li><strong>Community Research: </strong>Game Designers need to understand your player’s/community’s needs, behaviours, and preferences. What do they look for in their gaming experience? Why do they respond to certain features and not others? What designs and colour schemes will keep them engaged? 
+					Finding answers to these questions can help you create a game they will love.  </li>
+			</ul>
+
+			<h3>Effects of Having Disengaged Players</h3>
+			<p>Having disengaged players can have several negative consequences for a game, affecting both its short-term and long-term success. The key consequences of having disengaged players: <br />
+			</p>
+			<ul>
+				<li><strong>Declining Player Retention: </strong>When disengaged, players are more likely to stop playing a game. This leads to a decline in player retention, meaning fewer active players over time. A shrinking player base can negatively impact the game’s ecosystem and overall success. </li><br />
+				<li><strong>Reduced Monetization Opportunities: </strong>Disengaged players are less likely to spend money on in-game purchases, limiting monetization opportunities for the game. They may be less motivated to invest in cosmetic items, expansions, or premium features, resulting in decreased revenue generation for the game company. </li><br />
+				<li><strong>Negative Word-of-mouth: </strong>Disengaged players who are dissatisfied with their experience may spread negative word-of-mouth about the game. This can deter potential new players from trying or purchasing the game. 
+				Negative reviews, social media posts, or forum discussions can significantly impact the game’s reputation and potential success, leading to lower sales and diminished market presence.</li><br />
+				<li><strong>Poor Community Interaction: </strong>Disengaged players are less likely to actively participate in the game’s community. They may be less inclined to engage in discussions, provide feedback, or contribute positively to the community environment. 
+				This lack of involvement can result in a less vibrant and supportive community, affecting the overall social experience for other players. </li><br />
+				<li><strong>Impact on Development Priorities: </strong>Disengaged players may not provide valuable feedback or suggestions for improving the game. This lack of input can hinder the development team’s understanding of player preferences and needs. 
+				Without insights from disengaged players, the game company may struggle to make informed decisions about updates, patches, and future content, potentially missing opportunities for improvement. </li><br />
+				<li><strong>Missed Opportunities for Upselling and Expansion: </strong>Disengaged players who have already purchased the base game may be less likely to invest in additional expansions, DLCs, or sequels. This results in missed opportunities for upselling and expanding the game’s revenue streams. 
+				Disengagement can limit the game’s potential for ongoing monetization and growth. </li><br />
+			</ul>
+
+			<h3>Conclusion</h3>
+			<p>In the world of video games, player engagement closely links to whether a game is considered successful or not. Applying the best practices for player engagement such as <em>gameplay mechanics, story immersion and community research</em>
+			will allow the game to have a healthy player base and avoid effects of having a disengaged player base such as <em>declining player retention, reduced monetization opportunities, negative word-of-mouth, player community interaction, impact on development priorities and missed opportunities for upselling and expansion.</em></p>
+		</div>
+
+		<div id="Graphics-and-Audio">
+			<h2>7. Graphics and Audio<a class='source-link' href="#source12"><sup>[12]</sup></a></h2>
+			<p>We might take it for granted, but video games depend a lot on the player’s sensory experiences. Graphics are what usually grasp our attention first. Our eyes capture what the game looks like, how the world is built, how our character looks, and we can even determine the genre of game we’d be playing. 
+			Sound is the other main component in video games. This is why sound is so important to do it properly, it adds another layer of depth into the experience.</p>
+
+			<h3>Best Practices for Developing Quality Graphics and Audio in Video Games</h3>
+
+			<p>Good game design uses all of the available tools to create a well-rounded experience for the player.</p>
+
+			<ol>
+				<li>It is important to consider the player’s perspective. What kind of graphics and audio will create the most immersive experience for the player? For example: background noise succeeds well in creating an immersive experience for players.</li><br />
+				<li>The game’s overall aesthetic must be considered. The graphics and audio should complement each other to create a cohesive look and feel for the game.</li><br />
+				<li>Graphics and audio can be used to convey important information to the player. For example, in horror games such as Phasmophobia visual and auditorial clues are given to the players to figure out what kind of ghost is haunting a certain location.</li>
+			</ol>
+
+			<p>When used effectively, graphics and audio can enhance the player’s experience and make the game more enjoyable. However, it is important to consider all aspects of the game design before making decisions about graphics and audio. </p>
+
+			<h3>Effects of Good Graphics and Audio Utilisation</h3>
+			<ul>
+				<li><strong>Immersion: </strong>Bringing the game world to life will immerse the player in it. In certain games, the footstep sounds vary, depending on the surface you are going through. Small details like this can add a lot to the player's experience. Immersion is the result of a great atmosphere creation. In consequence, the player goes a layer deeper into the experience and feels 
+				they’re part of the world. The graphics and sound design team must be congruent with the type of world created. Imagine playing Dead Space without blood spatters and the sound assets replaced with ones that players would hear in Mario. Instead of conveying a horrific feeling, the game would be perceived as comedic, and satirical, to say the least.</li><br />
+				<li><strong>Emotional Response: </strong>Once players are fully immersed in the video game, they are more susceptible to providing an emotional response, depending on the situation they’ve been put into. It can be as simple as a cutscene where the character says goodbye to a loved one, or a gruesome scene where the main character is tied up and something is slowly lurking towards them. 
+				Adding the correct characteristics to a cutscene might make players feel a certain way. They can be sad, disgusted, happy, melancholic, and feel so many other responses at the same time. The purpose of sound is to further complement the experience, and emotional responses are an essential part of the gaming loop. They can play a huge part in bringing you back to the game.</li><br />
+				<li><strong>Feedback: </strong>A creaking sound when opening a door in Resident Evil, Blood splatters when players shoot something in Dead Space, or the sound of players' tools breaking in Minecraft are all examples of feedback being provided by the game developers to deepen the experience.</li><br />
+			</ul>
+
+			<h3>Conclusion</h3>
+			<p>In conclusion, good utilisation of graphics and audio in video games are some of the building blocks that make up a good game. Game Developers and Designers should maintain the quality of these aspects to ensure an enjoyable experience for the players.</p>
+		</div>
+
+		<div id="Development-Process">
+			<h2>8. Development Process</h2>
+
+			<p>Development process could be categorized into:<a class='source-link' href="#source13"><sup>[13]</sup></a></p>
+			<ol>
+				<li>Pre-production</li>
+				<li>Production</li>
+				<li>Post-production</li>
+			</ol>
+
+			<div style="border:0px;text-align:center">
+				<img src="https://blogs.geniteam.com/wp-content/uploads/2016/02/game.png" height="300">
+			</div>
+
+			<h3>Pre-production</h3>
+			<p>During pre-production, the concept of the game is formed. Developers will decide on:<a class='source-link' href="#source14"><sup>[14]</sup></a></p>
+			<ul>
+				<li><strong>Game Genre:</strong>  What is the gameplay for the game? Some favourable game genres would include platformer game, shooter game, puzzle-solving games, survival games, party games, simulation game or strategy game. It's also time to determine if your game is single-player, local multiplayer or online game.</li><br>
+				<li><strong>Core Gameplay Mechanics:</strong> What can the players do? Some controls to think about would be can the player jump, run, hide or shoot. What's is the goal of the players? Would you want the players to collect all coins, survive till the end or eliminate other?</li><br>
+				<li><strong>Storyline and Characters:</strong> To ensure your game is interesting to the players, some questions you would be asking yourself during script writing, including how should the story progress, how many characters are there, how many characters are playable and how will the characters impact the storyline? Your story could be scary, romantic or comedy.</li><br>
+				<li><strong>World Design:</strong> Maps design would change depending on the game. A open world would have a large area for the player to explore as they want. On the other hand, puzzle game would confined they players to a certain area. The theme of the map is also important, is it located in a desert, snowy mountain, forest or somewhere else?</li><br>
+				<li><strong>Development Plan:</strong> How many members would you want to help develop this game, the more the member involved, the higher the expenses. When will the development start and end? When should we start testing the game? How does the development timetable look like These questions are ask to ensure your development progress is on time.</li><br>
+				<li><strong>Target Demographic via Market Research:</strong> Set our target demographic, who would you like to play your game? The target demographic would impact how much we can charge for the game, if the target demographic is mostly young audience, the price should be too high. At the same time, researching competitors' game, this can determine how many active players can we expect and what have other competitors done with the game from the same genre.</li>
+			</ul>
+
+			<h3>Production</h3>
+			<p>During production, developers will code for the game:<a class='source-link' href="#source14"><sup>[14]</sup></a></p>
+			<ul>
+				<li>Characters</li>
+				<li>In-game objects</li>
+				<li>Maps</li>
+				<li>Sound</li>
+				<li>UI</li>
+			</ul>
+			<p>Developers will be the testers for the game during this time.</p>
+
+			<h3>Post-production</h3>
+			<p>After all the core mechanics are added into the game, developers will release the game as “alpha version” and “beta version” to the public for testing. During this time, developers will add additional features and optimize the game. Once the game is ready, it will be published and sold to the public. During post-production, developers will continue to update the game, regularly patching and fixing bugs to ensure the players’ gaming experience. Some developers could also start the production of the DLC<em>(Downloadable Content)</em> if the game is deemed successful.<a class='source-link' href="#source13"><sup>[13]</sup></a></p>
+
+			<h3>Conclusion</h3>
+			<p>Developers should plan out the entire development process to streamline the process and ensure the game can be developed by the deadline.</p>
+		</div>
+
+		<div id="Market-Research">
+			<h2>9. Market Research</h2>
+			<p>This process should be done during the pre-development of the game. It should let the developers know:<a class='source-link' href="#source15"><sup>[15]</sup></a></p>
+			<ul>
+				<li>The game target demographic</li>
+				<li>The potential income the game could generate</li>
+				<li>Whether it will be worth the developers’ time to spend in on development of the game</li>
+				<li>The competition the game will face</li>
+			</ul>
+			
+			<p>Knowing <strong>the competition the game will face</strong> allows the developers to identify hidden opportunities for their game and avoid competing in an oversaturated market. Discovering this early in the development process allows the developers to specialize their game genre or to switch to a different genre.</p>
+			<p>For example, MOBA games are over-saturated with the number of games published to the public, so developers could specialize the genre to be a first-person shooter MOBA game.</p>
+
+			<p>Developers could do <strong>surveys</strong> or <strong>gather existing data sources</strong><a class='source-link' href="#source16"><sup>[16]</sup></a> to determine potential players for the game, and how the game should be headed to please the demographic. Developers could also analyse competitors’ games, using their weaknesses and strengths to improve the game.<a class='source-link' href="#source17"><sup>[17]</sup></a></p>
+		
+			<h3>Conclusion</h3>
+			<p>Market research is important because it tells the developers what the players want, how likely they will spend on the game and what feature the developers should add.<a class='source-link' href="#source18"><sup>[18]</sup></a> Ensuring the game could have a long and active player base.</p>
+		</div>
+
+		<div id="Pros-Cons"style="text-align:center">
+			<h1>Pros and Cons</h1>
+
+			<table>
+				<tbody>
+					<tr>
+						<th style="width:50%">Pros</th>
+						<th style="width:50%">Cons</th>
+					</tr>
+					<tr>
+						<td>Allow teacher to teach the class using game-based learning by using various programs such as Quizziz or Kahoot. From a student's perspective, this makes learning more fun with game-based interactions and the ability to work through a quiz using their own devices. For teachers, there is a host of pre-built quizzes to pick from as well as the option to edit and create their own from scratch.<a class="source-link" href="#source19"><sup>[19]</sup></a></td>
+						<td>Neglect other key areas of your life, such as personal or professional life. It’s a safe place to fail, and it presents an easy way to escape real-world problems. Although escaping from stress is not necessarily bad, the problem occurs when gamers start to neglect other critical aspects of their real life.<a class="source-link" href="#source22"><sup>[22]</sup></a></td>
+					</tr>
+					<tr>
+						<td>Expand the scope of entertainment by no longer limiting the game to the player’s imagination. As technology continues advancing, the boundaries between different forms of entertainment are fading. Online multiplayer games are creating lively communities in virtual worlds, emphasizing the growing role and interest in social interaction as part of entertainment.<a class="source-link" href="#source20"><sup>[20]</sup></a></td>
+						<td>Causes unhealthy addiction as most games are built to let the players stay online as long as possible. It could also cause gambling addiction as most games now incorporate gacha system into their game, letting unsuspecting underage players spend tons of money on the game.<a class="source-link" href="#source22"><sup>[22]</sup></a></td>
+					</tr>
+					<tr>
+						<td>Increase the connectivity between societies as they can play with each other even though both are located at opposite sides of the Earth. A research found that game engagement correlated to a stronger sense of social identity, or how people self-identify based on their affiliation to groups, which corresponded with higher self-esteem, more social competence and lower levels of loneliness.<a class="source-link" href="#source21"><sup>[21]</sup></a></td>
+						<td>Cause physical or mental health problems if players don’t play in moderation. Too much playtime can cause exhaustion, lack of motivation, poor emotional regulation, depression, social anxiety, poor sleep hygiene, muscle loss and dehydration.<a class="source-link" href="#source23"><sup>[23]</sup></a></td>
+					</tr>
+					<tr><td>Help contribute to cognitive development among the children who play games. In a study of 2,217 children published in 2022, researchers found that cognitive performance, specifically in tasks related to memory and response inhibition, was better among children who played video games for around 21 hours a week compared to those who didn’t play any video games.<a class="source-link" href="#source21"><sup>[21]</sup></a></td>
+						<td>Allow scammer to catch their prey because players are anonymous in the game. Scammers promise to pay users in-game currency in exchange for actions such as clicking on ads that contain malware that can track login information or set up fraudulent sites that claim to sell in-game currency to capture users’ login and credit card information.<a class="source-link" href="#source24"><sup>[24]</sup></a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>	
+
+		<div id="prediction">
+			<h1 style="text-align:center">Prediction</h1>
+			<ol>
+				<li>As more and more game engine integrates AI as a helper to help the developers streamline the development process, it could lower the difficulty for new and young developers to enter the game development environment.<a class="source-link" href="#source25"><sup>[25]</sup></a></li>
+				<li>With the help of AI, indie game developers would be more favourable than big companies' game developers as they can do big projects while not having the stress big companies have <em>(because they must rush deadlines and fear being fired)</em> and able to work with flexible time.<a class="source-link" href="#source25"><sup>[25]</sup></a></li>
+				<li>Unreal engine currently uses a visual scripting called “Blueprint”. It allows new developers to create a simple game without writing a single code. This allows others to pick up game development as a hobby as in the future, writing code might no longer needed for creating a game.<a class='source-link' href="#source26"><sup>[26]</sup></a></li>
+				<li>Godot being completely free under the MIT license with no additional fees or contracts, giving creators the full rights to the game they build within the engine, can out-compete Unity or Unreal Engine that require developers to give some percentage of income from the game to them.<a class='source-link' href="#source27"><sup>[27]</sup></a></li>
+				<li>A completely open-source platform that runs on a few plug-in such as players movement and visual output will become popular. Players could fully customise their game by downloading plug-ins or moderation created by other developer. They could delete any features they don't like and add features they liked.</li>
+			</ol>
+		</div>	
+
+		<div id="References">
+			<!--If you don't know how to add sources, you can ask me. ~Francis-->
+			<h2>References:</h2>
+			<ol>
+				<li id="source1"><a href="https://www.codecademy.com/resources/blog/programming-languages-for-game-development/" target="_blank">https://www.codecademy.com/resources/blog/programming-languages-for-game-development/</a></li>
+				<li id="source2"><a href="https://herovired.com/learning-hub/blogs/aspects-of-video-game-design/" target="_blank">https://herovired.com/learning-hub/blogs/aspects-of-video-game-design/</a></li>
+				<li id="source3"><a href="https://www.codecademy.com/enrolled/courses/introduction-to-game-development" target="_blank">https://www.codecademy.com/enrolled/courses/introduction-to-game-development</a></li>
+				<li id="source4"><a href="https://www.dictionary.com/browse/personal-computer" target="_blank">https://www.dictionary.com/browse/personal-computer</a></li>
+				<li id="source5"><a href="https://dictionary.cambridge.org/dictionary/english/console" target="_blank">https://dictionary.cambridge.org/dictionary/english/console</a></li>
+				<li id="source6"><a href="https://www.techradar.com/phones/asus-phones/asus-rog-phone-8-pro-review" target="_blank">https://www.techradar.com/phones/asus-phones/asus-rog-phone-8-pro-review</a></li>
+				<li id="source7"><a href="https://kevurugames.com/blog/the-art-of-storytelling-how-is-storytelling-used-in-video-games/" target="blank_">https://kevurugames.com/blog/the-art-of-storytelling-how-is-storytelling-used-in-video-games/</a></li>
+				<li id="source8"><a href="https://jayisgames.com/review/the-role-of-visual-design-in-the-gaming-industry.php" target="_blank">https://jayisgames.com/review/the-role-of-visual-design-in-the-gaming-industry.php</a></li>
+				<li id="source9"><a href="https://www.accesscreative.ac.uk/blog/graphic-design-and-game-design/" target="blank_">https://www.accesscreative.ac.uk/blog/graphic-design-and-game-design/</a></li>
+				<li id="source10"><a href="https://www.larksuite.com/en_us/topics/gaming-glossary/game-pacing/" target="_blank">https://www.larksuite.com/en_us/topics/gaming-glossary/game-pacing/</a></li>
+				<li id="source11"><a href="https://www.concentrix.com/insights/blog/defining-the-player-experience-gap-why-gaming-companies-need-to-level-up-player-engagement/" target="_blank">https://www.concentrix.com/insights/blog/defining-the-player-experience-gap-why-gaming-companies-need-to-level-up-player-engagement/</a></li>
+				<li id="source12"><a href="https://www.gamingpitstop.com/post/the-importance-of-sound-design-in-video-games/" target="_blank">https://www.gamingpitstop.com/post/the-importance-of-sound-design-in-video-games/.</a></li>
+				<li id="source13"><a href="https://pinglestudio.com/blog/full-cycle-development/game-development-stages/" target="_blank">https://pinglestudio.com/blog/full-cycle-development/game-development-stages/</a></li>
+				<li id="source14"><a href="https://300mind.studio/blog/stages-of-game-development/" target="_blank">https://300mind.studio/blog/stages-of-game-development</a></li>
+				<li id="source15"><a href="https://www.youtube.com/watch?v=v-l-Q1Gt2vE&t=30s" target="_blank">https://www.youtube.com/watch?v=v-l-Q1Gt2vE&t=30s</a></li>
+				<li id="source16"><a href="https://games-stats.com/steam/tags/?sort=revenue-median-reverse/" target="_blank">https://games-stats.com/steam/tags/?sort=revenue-median-reverse/</a></li>
+				<li id="source17"><a href="https://www.linkedin.com/advice/3/how-do-you-research-your-games-audience-market-skills-game-design/" target="_blank">https://www.linkedin.com/advice/3/how-do-you-research-your-games-audience-market-skills-game-design/</a></li>
+				<li id="source18"><a href="https://www.forbes.com/councils/forbesbusinesscouncil/2023/07/26/market-research-the-key-to-developing-a-breakthrough-game-app/" target="_blank">https://www.forbes.com/councils/forbesbusinesscouncil/2023/07/26/market-research-the-key-to-developing-a-breakthrough-game-app/</a></li>
+				<li id="source19"><a href="https://www.techlearning.com/how-to/what-is-quizizz-and-how-can-it-be-used-for-teaching-tips-and-tricks" target="blank_">https://www.techlearning.com/how-to/what-is-quizizz-and-how-can-it-be-used-for-teaching-tips-and-trick/</a></li>
+				<li id="source20"><a href="https://www.iion.io/blog/how-gaming-is-reshaping-entertainment" target="blank_">https://www.iion.io/blog/how-gaming-is-reshaping-entertainment</a></li>
+				<li id="source21"><a href="https://builtin.com/articles/online-gaming-social-benefits" target="blank_">https://builtin.com/articles/online-gaming-social-benefits</a></li>
+				<li id="source22"><a href="https://gamequitters.com/pros-and-cons-of-video-games/" target="blank_">https://gamequitters.com/pros-and-cons-of-video-games/</a></li>
+				<li id="source23"><a href="https://www.gamedesigning.org/gaming/pros-and-cons-of-gaming/" target="blank_">https://www.gamedesigning.org/gaming/pros-and-cons-of-gaming/</a></li>
+				<li id="source24"><a href="https://www.forbes.com/councils/forbestechcouncil/2024/01/29/what-you-need-to-know-about-gaming-scams-targeting-children/" target="blank_">https://www.forbes.com/councils/forbestechcouncil/2024/01/29/what-you-need-to-know-about-gaming-scams-targeting-children/</a></li>
+				<li id="source25"><a href="https://www.forbes.com/sites/bernardmarr/2024/04/18/the-role-of-generative-ai-in-video-game-development/" target="blank_">https://www.forbes.com/sites/bernardmarr/2024/04/18/the-role-of-generative-ai-in-video-game-development/</a></li>
+				<li id="source26"><a href="https://www.linkedin.com/advice/0/what-some-benefits-drawbacks-using-visual-scripting/" target="_blank">https://www.linkedin.com/advice/0/what-some-benefits-drawbacks-using-visual-scripting/</a></li>		
+				<li id="source27"><a href="https://www.perforce.com/blog/vcs/what-is-godot" target="blank_">https://www.perforce.com/blog/vcs/what-is-godot</a></li>
+			</ol>
+		</div>
+
+		<div id="addition">
+			<h1>Additional Info</h1>
+			<p style="padding-left:10%"><strong>Course Name: </strong>CCT1114 Introduction to Computing Technologies
+				<br><strong>Area: </strong> Game Design and Development</p>
+				<br>
+		</div>
+	</body>
+</html>
